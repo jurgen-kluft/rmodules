@@ -27,6 +27,11 @@ func GetPackage() *denv.Package {
 	rotaryEncoderLib := denv.SetupCppLibraryForArduinoEsp32(mainpkg, "lib_rotary_encoder", "rotary_encoder")
 	rotaryEncoderLib.AddDependencies(corepkg.GetMainLib())
 
+	// Example apps
+	basicRotaryEncoderExampleApp := denv.SetupCppAppProjectForArduino(mainpkg, "basic_rotary_encoder", "examples/basic_rotary_encoder")
+	basicRotaryEncoderExampleApp.AddDependency(rotaryEncoderLib)
+
+	mainpkg.AddMainApp(basicRotaryEncoderExampleApp)
 	mainpkg.AddLibrary(rotaryEncoderLib)
 	return mainpkg
 }
