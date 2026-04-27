@@ -1,4 +1,4 @@
-#include "rdno_rotary_encoder/c_rotary_encoder.h"
+#include "rrotary_encoder/c_rotary_encoder.h"
 
 #if defined(TARGET_ESP32)
 #    include "esp_log.h"

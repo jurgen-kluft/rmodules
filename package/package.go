@@ -1,23 +1,20 @@
-package rdno_modules
+package rmodules
 
 import (
 	denv "github.com/jurgen-kluft/ccode/denv"
-	rdno_core "github.com/jurgen-kluft/rdno_core/package"
+	rcore "github.com/jurgen-kluft/rcore/package"
 )
 
 const (
 	repo_path = "github.com\\jurgen-kluft"
-	repo_name = "rdno_modules"
+	repo_name = "rmodules"
 )
 
-// rdno_modules is a  package for Arduino projects that holds a
-// couple of sensor objects, namely:
-// - BME280 (temperature, humidity, pressure)
-// - BH1750 (light sensor)
-// - Sensirion/SCD41 (carbon dioxide sensor, temperature, humidity)
+// rmodules is a package for Arduino projects that holds libraries:
+// - A library for the rotary encoder
 func GetPackage() *denv.Package {
 	// dependencies
-	corepkg := rdno_core.GetPackage()
+	corepkg := rcore.GetPackage()
 
 	// main package
 	mainpkg := denv.NewPackage(repo_path, repo_name)

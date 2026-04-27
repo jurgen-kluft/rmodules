@@ -1,6 +1,6 @@
-#ifndef __RDNO_MODULES_ROTARY_ENCODER_H__
-#define __RDNO_MODULES_ROTARY_ENCODER_H__
-#include "rdno_core/c_target.h"
+#ifndef __ARDUINO_MODULES_ROTARY_ENCODER_H__
+#define __ARDUINO_MODULES_ROTARY_ENCODER_H__
+#include "rcore/c_target.h"
 #ifdef USE_PRAGMA_ONCE
 #    pragma once
 #endif
@@ -53,4 +53,4 @@ namespace ncore
     }  // namespace nrotary
 }  // namespace ncore
 
-#endif  // __RDNO_MODULES_ROTARY_ENCODER_H__
+#endif  // __ARDUINO_MODULES_ROTARY_ENCODER_H__

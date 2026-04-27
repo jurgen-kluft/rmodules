@@ -1,4 +1,4 @@
-# rdno_modules
+# rmodules
 
 Arduino Library supporting different modules, the following modules are currently supported:
 

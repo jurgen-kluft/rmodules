@@ -1,7 +1,7 @@
 #include "ccore/c_va_list.h"
-#include "rdno_core/c_serial.h"
-#include "rdno_core/c_timer.h"
-#include "rdno_rotary_encoder/c_rotary_encoder.h"
+#include "rcore/c_serial.h"
+#include "rcore/c_timer.h"
+#include "rrotary_encoder/c_rotary_encoder.h"
 
 /*
 connecting Rotary encoder
