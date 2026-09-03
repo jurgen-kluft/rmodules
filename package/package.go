@@ -1,7 +1,7 @@
 package rmodules
 
 import (
-	denv "github.com/jurgen-kluft/ccode/denv"
+	denv "github.com/jurgen-kluft/go-ide/denv"
 	rcore "github.com/jurgen-kluft/rcore/package"
 )
 
